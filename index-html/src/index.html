@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Account</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .form-container {
+      background: #fff;
+      color: #333;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .form-container h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .form-container p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-container input {
+      margin-right: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #6a11cb;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #2575fc;
+    }
+
+    .form-container small {
+      display: block;
+      margin-top: 10px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Create Your Account</h1>
+    <p>Fill in the details below to get started!</p>
+    <form id="signupForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Create a password" required>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I accept the <a href="#">Terms and Conditions</a></label>
+      </div>
+
+      <button type="submit">Create Free Account</button>
+    </form>
+    <small>We respect your privacy and will never share your details.</small>
+  </div>
+</body>
+
+</html>
